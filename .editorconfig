@@ -1,0 +1,10 @@
+root = true
+
+[*]
+end_of_line = lf
+indent_stype = space
+indent_size = 2
+
+[*.sh]
+shell_variant      = posix # like -ln=posix
+switch_case_indent = true  # like -ci
