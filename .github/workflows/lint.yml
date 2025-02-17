@@ -80,7 +80,15 @@ jobs:
           FIX_TYPESCRIPT_PRETTIER: ${{ vars.SUPERLINTER_FIX }}
           FIX_TYPESCRIPT_STANDARD: ${{ vars.SUPERLINTER_FIX }}
           FIX_VUE_PRETTIER: ${{ vars.SUPERLINTER_FIX }}
+<<<<<<< HEAD
           FIX_YAML_PRETTIER: ${{ vars.SUPERLINTER_FIX }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           RUN_LOCAL: ${{ vars.SUPERLINTER_RUN_LOCAL }}
           VALIDATE_BASH_EXEC: 'false' # no one cares if a shell script is +x
+=======
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          LINTER_RULES_PATH: . # fix superlinter from being dumb and expecting rules in .github/linters
+          RUN_LOCAL: ${{ vars.SUPERLINTER_RUN_LOCAL }}
+          VALIDATE_BASH_EXEC: 'false' # no one cares if a shell script is +x
+          VALIDATE_YAML_PRETTIER: 'false' # yamllint already exists
+>>>>>>> upstream/main

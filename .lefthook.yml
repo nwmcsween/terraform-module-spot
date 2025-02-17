@@ -1,3 +1,4 @@
+---
 skip_output:
   - meta # Skips lefthook version printing
   - empty_summary # Skips summary heading when there are no steps to run
